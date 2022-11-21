@@ -19,11 +19,11 @@ mongoose.connect(
   }
 );
 
-app.use("/api", coursesRouter);
+app.use("/", coursesRouter);
 
-app.get("/", (req, res) => {
-  res.end("Hello");
-});
+// app.get("/", (req, res) => {
+//   res.end("Hello");
+// });
 
 app.listen(port, () => {
   console.log("server is running on port 8000");
